@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:background="@drawable/dialog_shape"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="33dp"
+    app:strokeWidth="18dp"
+    app:strokeColor="@color/borderline"
+    >
+
+        <TextView
+            android:id="@+id/dialog_textName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:fontFamily="@font/munchkin_cyr"
+            android:text="Lexatron"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12dp"
+            android:textColor="@color/borderline"/>
+
+
+        <ImageView
+            android:id="@+id/PhotoSexDialog"
+            android:layout_width="201dp"
+            android:layout_height="291dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/armor_male" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="132dp"
+            android:fontFamily="@font/roboto_black"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="6"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="45dp" />
+
+        <TextView
+            android:id="@+id/strenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="168dp"
+            android:fontFamily="@font/roboto_black"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="6"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="45dp"
+            android:background="@android:color/transparent"/>
+
+
+        <ImageButton
+            android:id="@+id/level_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_blue"
+            android:layout_gravity="center"
+            android:layout_marginBottom="130dp"
+            android:layout_marginEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/level_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_blue"
+            android:layout_gravity="center"
+            android:layout_marginBottom="130dp"
+            android:layout_marginStart="50dp"
+            android:background="@android:color/transparent"
+            android:rotation="180"/>
+        <ImageButton
+            android:id="@+id/strenght_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_pink"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="60dp"
+            android:background="@android:color/transparent"
+            android:rotation="180" />
+        <ImageButton
+            android:id="@+id/strenght_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_pink"
+            android:layout_gravity="center"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="60dp"
+            android:background="@android:color/transparent"
+            />
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto "
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+
+
+    <FrameLayout tools:ignore="ExtraText">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="53dp"
+        android:layout_column="0"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="6dp"
+        app:strokeColor="@color/borderline">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/show_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:backgroundTint="#00FFFFFF"
+                android:rotation="45"
+                android:src="@drawable/ic_baseline_add_24"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="2dp"
+                app:tint="@color/md_theme_dark_errorContainer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/PhotoSex"
+            android:layout_width="130dp"
+            android:layout_height="173dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="-20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/transparent"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:src="@drawable/male"
+            />
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:autoSizeMaxTextSize="40dp"
+            android:autoSizeMinTextSize="15dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/munchkin_cyr"
+            android:maxHeight="60dp"
+            android:maxLines="3"
+            android:text="@string/app_name"
+            android:textColor="@color/borderline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/level1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:fontFamily="@font/roboto_black"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="6"
+            android:text="1"
+            android:maxLines="1"
+            android:gravity="end"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="80dp"/>
+        <TextView
+            android:id="@+id/strenght1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:fontFamily="@font/roboto_black"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="6"
+            android:gravity="end"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:maxLines="1"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="80dp"/>
+    </FrameLayout>
+
+
+
+</GridLayout>
